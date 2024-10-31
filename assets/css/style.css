@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+:root {
+    --app-background-light: #efeef5;
+    --app-background-body: #021526;
+    --app-font-color:#98DED9;
+    --app-large-font-color:#EEEEEE;
+    --app-medium-font-color:#508c9b;
+    --app-section-background-color :#78B7D0;
+    --app-border-radius:25px;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: var(--app-background-body);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+/*----------------------------------*/
+/* Utilities                        */
+/*----------------------------------*/
+
+.flex {
+    display: flex;
+    place-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-end {
+    justify-content: flex-end; 
+    width: 100%; 
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+.gap-30{
+    gap:30px;
+}
+.grid-center {
+    display: grid;
+    place-items: center;
+}
+.grid{
+    display: grid;
+
+}
+.flex-start{
+    justify-content: flex-end;
+    display: inline-flex;
+}
+.align-center{
+    align-items: center;
+}
+
+/*----------------------------------*/
+/* Main                             */
+/*----------------------------------*/
+    .clock{
+        font-size: 150px;
+        color: var(--app-large-font-color);
+    }
+    input[type="number"] {
+        width: 100px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: var(--app-border-radius);
+    }
+      .set-alarm {
+        padding: 12px;
+        font-size: 25px;
+        background-color: var(--app-medium-font-color);
+        color: white;
+        border-radius: var(--app-border-radius);
+      }
+      button:hover {
+        background-color: var(--app-medium-font-color) ;
+        box-shadow: 0px 0px 10px rgba(80, 140, 155, 0.8); 
+    }
+
+  .alarm-form {
+    justify-content: center;
+  }
